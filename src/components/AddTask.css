@@ -1,0 +1,44 @@
+.AddTask
+{
+  text-align: left;
+  background-color:#EAEBEF;
+  width: 680px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.text {
+  width: 480px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.add {
+  height: 30px;
+  width: 70px;
+  margin-left: 15px;
+}
+
+.clear {
+  height: 30px;
+  width: 70px;
+  margin-left: 5px;
+}
+
+.date {
+  text-align: center;
+  width: 180px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.date-label {
+  margin-left: 20px;
+}
+
+.checkbox {
+  margin-left: 240px;
+}

@@ -1,0 +1,12 @@
+.ToDoTasksList{
+  min-height: 415px;
+  background-color: #EAEBEF;
+  margin: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
