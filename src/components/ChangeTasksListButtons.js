@@ -1,21 +1,20 @@
 import React from 'react';
-import './ChangeTasksListButtons.css'
+import './styles/ChangeTasksListButtons.css'
 import styled from 'styled-components'
 
-const ChangeTasksListButtons = () => {
+const ChangeTasksListButtons = (props) => {
 
-    const Button = styled.button`
+  const Button = styled.button`
     background: #EAEBEF;
     `;
 
-    return (
-        <>
-            <div className="ChangeTasksListButtons">
-                <button className="to-do">Tasks-to-do</button>
-                <Button className="completed">Completed-tasks</Button>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <div className="ChangeTasksListButtons">
+        <button onClick={() => props.change(false)} className="to-do">Tasks-to-do</button>
+        <Button onClick={() => props.change(true)} className="completed">Completed-tasks</Button>
+      </div>
+    </>
+  );
 }
-
 export default ChangeTasksListButtons;

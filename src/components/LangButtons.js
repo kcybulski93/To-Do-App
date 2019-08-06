@@ -1,5 +1,5 @@
 import React from 'react';
-import './LangButtons.css';
+import './styles/LangButtons.css';
 const LangButtons = () => {
   return (
     <div className='LanguageButtons'>
