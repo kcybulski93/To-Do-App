@@ -1,4 +1,5 @@
 .App {
+  border: 3px solid #061D24;
   text-align: center;
   background-color:#ffffff;
   margin-left: auto;
@@ -8,5 +9,4 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 15px;
-
 }

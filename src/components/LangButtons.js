@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/LangButtons.css';
+
 const LangButtons = () => {
   return (
     <div className='LanguageButtons'>

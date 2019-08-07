@@ -1,0 +1,59 @@
+.toDoTask
+{
+  width: 680px;
+  height: 40px;
+  background: greenyellow;
+  border-radius: 10px;
+}
+
+.toDoTask .content
+{
+  float: left;
+  height: 40px;
+  width: 400px;
+  background: green;
+}
+
+.toDoTask .deadline
+{
+  float: left;
+  height: 40px;
+  width: 100px;
+  background: gray;
+}
+
+.completedTask
+{
+  width: 680px;
+  height: 40px;
+  background: purple;
+  border-radius: 10px;
+}
+
+.completedTask .content
+{
+  float: left;
+  height: 40px;
+  width: 300px;
+  background: green;
+}
+
+.completedTask .deadline
+{
+  float: left;
+  height: 40px;
+  width: 100px;
+  background: pink;
+}
+
+.completedTask h5
+{
+  margin: 0px;
+}
+
+.completedTask p
+{
+  text-align: left;
+  font-size: 10px;
+  margin: 0px;
+}

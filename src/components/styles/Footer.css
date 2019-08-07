@@ -1,7 +1,10 @@
 .Footer {
+    display: inline-block;
+    width: 680px;
     min-height: 70px;
     background-color: #EAEBEF;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 15px;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/Task.css';
 
 const Task = (props) => {
 
@@ -10,12 +11,12 @@ const Task = (props) => {
 
   if (active) {
     return (
-      <div>
-        <p>
-          <strong style={priority ? style : null}>{text}</strong> - do <span>{date} </span>
-          <button onClick={() => props.delete(id)}>Delete</button>
-          <button onClick={() => props.change(id)}>Done</button>
-        </p>
+      <div className='toDoTask'>
+        <div className='content'><h4 style={priority ? style : null}>{text}</h4></div>
+        <div className='deadline'>  - do <span> {date} </span> </div>
+        <button onClick={() => props.change(id)}>Completed</button>
+        <button>Edit</button>
+        <button onClick={() => props.delete(id)}>Delete</button>
       </div>
     );
   } else {
@@ -23,15 +24,13 @@ const Task = (props) => {
     const finish = new Date(finishDate).toLocaleString()
 
     return (
-      <div>
-
-        <p>
-          <strong>{text}</strong><em> (zrobić do {date})</em><br />
-          - potwierdzenie wykonania<span> {finish}</span>
-
-          <button onClick={() => props.delete(id)}>X</button>
-        </p>
+      <div className='completedTask'>
+        <div className='content'><h4>{text}</h4> <p>- potwierdzenie wykonania {finish}</p> </div>
+        <div className='deadline'><h5>(zrobić do {date})</h5></div>
+        <button>Back</button>
+        <button onClick={() => props.delete(id)}>Delete</button>
       </div>
+
     )
   }
 }

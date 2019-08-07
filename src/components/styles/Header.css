@@ -1,47 +1,24 @@
-.leftHeader{
-  width: 120px;
-  float: left;
+.Header {
+  display: inline-block;
+  width: 680px;
   background-color: #EAEBEF;
   height: 66px;
-  margin-top: 10px;
-  margin-left: 10px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  margin: 10px;
+  border-radius: 15px;
 }
-  
-.centerHeader {
-  text-align: center;
-  background-color: #EAEBEF;
-  width: 440px;
+.centerHeader{
   float: left;
+  width: 300px;
   height: 66px;
-  margin-top: 10px;
 }
-
-h1 {
+.centerHeader h1 {
   color: #4167B2;
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-h2 {
-  color: #4167B2;
-  margin-left: 30px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  text-align: center;
-}
-
-h4 {
-  color: #4167B2;
-  margin-left: 30px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: center;
-}
-
-h5 {
+.centerHeader h5 {
   color: #4167B2;
   margin-left: 0px;
   margin-top: 0px;

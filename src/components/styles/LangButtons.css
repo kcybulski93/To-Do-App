@@ -1,14 +1,9 @@
 .LanguageButtons{
-  text-align: center;
-  background-color: #EAEBEF;
-  height: 66px;
-  width: 120px;
-  float: left;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  margin-top: 10px;
-}
-
-.PlButton {
-  margin-top: 21px;
-}
+    float:left;
+    height: 66px;
+    width: 190px;
+  }
+  
+  .PlButton {
+    margin-top: 21px;
+  }

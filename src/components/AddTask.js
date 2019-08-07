@@ -52,7 +52,6 @@ class AddTask extends Component {
 
     return (
       <>
-        <div style={{ clear: "both" }} > </div>
         <div className="AddTask">
           <input className="text" type="text" placeholder="Add new task..." value={this.state.text} onChange={this.handleText} />
           <button className="add" onClick={this.handleAddClick}>Add</button>

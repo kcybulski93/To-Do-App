@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import LangButtons from './components/LangButtons';
 import Header from './components/Header';
 import AddTask from './components/AddTask';
 import ChangeTasksListButtons from './components/ChangeTasksListButtons';
@@ -13,8 +12,8 @@ class App extends Component {
   state = {
     changeTasksList: false,
     tasks: [
-      { id: 0, text: 'zagrać wreszcie w Wiedźmina 3', date: '2018-02-15', priority: true, active: true, finishDate: null },
-      { id: 1, text: "zrobić dobry uczynej", date: '2020-11-12', priority: false, active: true, finishDate: null },
+      { id: 0, text: 'Nauczyć się React.JS', date: '2019-08-07', priority: true, active: true, finishDate: null },
+      { id: 1, text: 'Nauczyć się TypeScript', date: '2019-11-12', priority: false, active: true, finishDate: null },
     ]
   }
 
@@ -66,12 +65,10 @@ class App extends Component {
     return (
       <div className="App" >
         <Header />
-        <LangButtons />
         <AddTask addTask={this.addTask} />
         <ChangeTasksListButtons change={this.changeTasksList} />
         {this.state.changeTasksList ? <ComplTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} /> :
-          <ToDoTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} changeTaskStatus={this.changeTaskStatus} />
-        }
+          <ToDoTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} changeTaskStatus={this.changeTaskStatus} />}
         < Footer />
       </div >
     );
