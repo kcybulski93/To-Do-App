@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import AddTask from './components/AddTask';
-import ChangeTasksListButtons from './components/ChangeTasksListButtons';
 import ToDoTasksList from './components/ToDoTasksList';
 import ComplTasksList from './components/ComplTasksList';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   counter = 2
@@ -75,14 +75,33 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" >
-        <Header />
-        <AddTask addTask={this.addTask} />
-        <ChangeTasksListButtons change={this.changeTasksList} />
-        {this.state.changeTasksList ? <ComplTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} back={this.restoreTask} /> :
-          <ToDoTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} changeTaskStatus={this.changeTaskStatus} back={this.restoreTask} />}
-        < Footer />
-      </div >
+      <Router>
+        <div className="App" >
+          <header>
+            {<Header />}
+          </header>
+          <main>
+            <artickle>
+              <section>
+                {<AddTask addTask={this.addTask} />}
+              </section>
+              <section>
+                <nav>
+                  <NavLink to="/to-do" activeClassName="news_selected">To-Do</NavLink>
+                  <NavLink to="/completed" activeClassName="news_selected">Done</NavLink>
+                </nav>
+                <Switch>
+                  <Route path="/to-do" component={() => <ToDoTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} changeTaskStatus={this.changeTaskStatus} back={this.restoreTask} />} />
+                  <Route path="/completed" component={() => <ComplTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} back={this.restoreTask} />} />
+                </Switch>
+              </section>
+            </artickle>
+          </main>
+          <footer>
+            {<Footer />}
+          </footer>
+        </div >
+      </Router >
     );
   }
 }
