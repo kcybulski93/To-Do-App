@@ -18,13 +18,34 @@ const ToDoTasksList = (props) => {
     })
   }
 
-  const activeTasks = active.map(task => <Task key={task.id} task={task} delete={props.deleteTask} change={props.changeTaskStatus} />)
+  const done = props.tasks.filter(task => !task.active);
+
+  if (done.length >= 2) {
+    done.sort((a, b) => {
+      if (a.finishDate < b.finishDate) {
+        return 1
+      }
+      if (a.finishDate > b.finishDate) {
+        return -1
+      }
+      return 0
+    })
+  }
+
+  const lastDone = done.find(task => !task.active);
+
+  const activeTasks = active.map(task => <Task key={task.id} task={task} delete={props.deleteTask} change={props.changeTaskStatus} edit={props.edit} />)
+  const lastDoneTask = lastDone ? <Task key={lastDone.id} task={lastDone} delete={props.deleteTask} change={props.changeTaskStatus} back={props.back} /> : <p>Nic nie zrobiłeś, Ty leniu!</p>
 
   return (
     <>
       <div style={{ clear: "both" }} > </div>
       <div className='ToDoTasksList'>
         {activeTasks}
+      </div>
+      <div>Last Done Task</div>
+      <div>
+        {lastDoneTask}
       </div>
     </>
   );

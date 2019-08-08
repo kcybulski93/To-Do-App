@@ -48,7 +48,6 @@ class App extends Component {
   }
 
   changeTaskStatus = (id) => {
-    console.log("change w stanie elementu o id " + id);
     const tasks = this.state.tasks.slice()
     tasks.forEach(task => {
       if (task.id === id) {
@@ -61,14 +60,41 @@ class App extends Component {
     })
   }
 
+  restoreTask = (id) => {
+    const tasks = this.state.tasks.slice()
+    tasks.forEach(task => {
+      if (task.id === id) {
+        task.active = true;
+        task.finishDate = null;
+      }
+    })
+    this.setState({
+      tasks
+    })
+  }
+
+  editTask = (id) => {
+    const tasks = this.state.tasks.slice()
+    tasks.forEach(task => {
+      if (task.id === id) {
+        task.active = null;
+        task.priority = null;
+        task.date = null;
+        task.text = task.text;
+      }
+    })
+    this.setState({
+      tasks
+    })
+  }
   render() {
     return (
       <div className="App" >
         <Header />
         <AddTask addTask={this.addTask} />
         <ChangeTasksListButtons change={this.changeTasksList} />
-        {this.state.changeTasksList ? <ComplTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} /> :
-          <ToDoTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} changeTaskStatus={this.changeTaskStatus} />}
+        {this.state.changeTasksList ? <ComplTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} back={this.restoreTask} /> :
+          <ToDoTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} changeTaskStatus={this.changeTaskStatus} back={this.restoreTask} edit={this.editTask} />}
         < Footer />
       </div >
     );

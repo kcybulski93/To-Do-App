@@ -18,7 +18,7 @@ const ComplTasksList = (props) => {
     })
   }
 
-  const doneTasks = done.map(task => <Task key={task.id} task={task} delete={props.deleteTask} change={props.change} />)
+  const doneTasks = done.map(task => <Task key={task.id} task={task} delete={props.deleteTask} change={props.change} back={props.back} />)
 
   return (
     <>

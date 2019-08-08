@@ -15,7 +15,7 @@ const Task = (props) => {
         <div className='content'><h4 style={priority ? style : null}>{text}</h4></div>
         <div className='deadline'>  - do <span> {date} </span> </div>
         <button onClick={() => props.change(id)}>Completed</button>
-        <button>Edit</button>
+        <button onClick={() => props.change(id)}>Edit</button>
         <button onClick={() => props.delete(id)}>Delete</button>
       </div>
     );
@@ -27,12 +27,12 @@ const Task = (props) => {
       <div className='completedTask'>
         <div className='content'><h4>{text}</h4> <p>- potwierdzenie wykonania {finish}</p> </div>
         <div className='deadline'><h5>(zrobić do {date})</h5></div>
-        <button>Back</button>
+        <button onClick={() => props.back(id)}>Back</button>
         <button onClick={() => props.delete(id)}>Delete</button>
       </div>
 
     )
-  }
+  } 
 }
-
-export default Task;
+  
+export  default Task;
