@@ -15,7 +15,7 @@ const Task = (props) => {
         <div className='content'><h4 style={priority ? style : null}>{text}</h4></div>
         <div className='deadline'>  - do <span> {date} </span> </div>
         <button onClick={() => props.change(id)}>Completed</button>
-        <button onClick={() => props.change(id)}>Edit</button>
+        <button>Edit</button>
         <button onClick={() => props.delete(id)}>Delete</button>
       </div>
     );
@@ -32,7 +32,7 @@ const Task = (props) => {
       </div>
 
     )
-  } 
+  }
 }
-  
-export  default Task;
+
+export default Task;

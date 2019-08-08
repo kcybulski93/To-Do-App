@@ -34,7 +34,7 @@ const ToDoTasksList = (props) => {
 
   const lastDone = done.find(task => !task.active);
 
-  const activeTasks = active.map(task => <Task key={task.id} task={task} delete={props.deleteTask} change={props.changeTaskStatus} edit={props.edit} />)
+  const activeTasks = active.map(task => <Task key={task.id} task={task} delete={props.deleteTask} change={props.changeTaskStatus} />)
   const lastDoneTask = lastDone ? <Task key={lastDone.id} task={lastDone} delete={props.deleteTask} change={props.changeTaskStatus} back={props.back} /> : <p>Nic nie zrobiłeś, Ty leniu!</p>
 
   return (
