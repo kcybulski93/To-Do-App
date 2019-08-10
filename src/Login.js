@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Login.css';
 
 class Login extends Component {
 
@@ -34,7 +35,6 @@ class Login extends Component {
         <div className="Login">
           <form onSubmit={this.handleForSubmit}>
             <input type="text" placeholder="Add your name..." value={this.state.name} onChange={this.handleNameInput}></input>
-            <br />
             <input type="text" placeholder="Add your surname..." value={this.state.surname} onChange={this.handleSurnameInput}></input>
             <button type="submit">START</button>
           </form>

@@ -1,0 +1,63 @@
+.Login {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    margin-top: 80px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,1);
+    -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,1);
+    box-shadow: 3px 3px 30px 5px rgba(204,204,204,1);
+}
+
+.Login input {
+    width: 300px;
+    background-color: #efefef;
+    color: #666666;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+}
+
+.Login input:focus {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+    box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+    border: 2px solid #a5cda5;
+    background-color: #e9f3e9;
+    color:#428c42;
+}
+
+.Login button {
+    width: 300px;
+    background-color: #36b03c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+
+}
+
+.Login button:focus {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+    box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+}
+
+.Login button:hover {
+    background-color: #37b93d;
+}

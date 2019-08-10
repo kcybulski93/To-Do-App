@@ -97,7 +97,7 @@ class ToDoApp extends Component {
             </section>
             <section>
               <nav>
-                <NavLink to="/to-do" activeClassName="news_selected">To-Do</NavLink>
+                <NavLink to="/to-do" activeClassName="news_selected"><button>Halo</button></NavLink>
                 <NavLink to="/completed" activeClassName="news_selected">Done</NavLink>
               </nav>
               <Switch>
