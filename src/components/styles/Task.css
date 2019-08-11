@@ -2,8 +2,7 @@
 {
   float: left;
   width: 678px;
-  margin-left: 1px;
-  margin-top: 1px;
+  margin: 1px;
   height: 40px;
   background: rgb(203, 223, 243);
   border-radius: 10px;
@@ -24,7 +23,7 @@
 .toDoTask .content h4
 {
     font-size: 16px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 8px;
     margin-bottom: 7px;
 }
@@ -61,36 +60,66 @@
 
 .completedTask
 {
+  float: left;
   width: 678px;
-  height: 40px;
-  background: purple;
+  margin: 1px;
+  height: 60px;
+  background: #e9f3e9;
   border-radius: 10px;
 }
 
 .completedTask .content
 {
   float: left;
-  height: 40px;
-  width: 300px;
-  background: green;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  height: 60px;
+  width: 490px;
+  background: #e9f3e9;
+}
+
+.completedTask .content h4
+{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.completedTask .content p
+{
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 7px;
 }
 
 .completedTask .deadline
 {
   float: left;
-  height: 40px;
-  width: 100px;
-  background: pink;
-}
-
-.completedTask h5
-{
-  margin: 0px;
-}
-
-.completedTask p
-{
   text-align: left;
-  font-size: 10px;
   margin: 0px;
+  padding: 0px;
+  border: 0px;
+  height: 40px;
+  width: 100px;  
+}
+
+.completedTask .deadline h4
+{
+    font-size: 16px;
+    margin-left: 0px;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+}
+
+.completedTask button
+{
+  float: left;
+  height: 30px;
+  width: 30px;
+  margin-top: 15px;
+  margin-left: 7px;
 }

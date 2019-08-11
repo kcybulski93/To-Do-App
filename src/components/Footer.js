@@ -5,7 +5,7 @@ const Footer = (props) => {
   return (
     <>
       <div className='Footer'>
-        <p> {props.name}<a href="https://gist.github.com/shprink/bf9599e1d66b9dc4d151e89c1199ccb8">Start</a> </p>
+        <p>Made with <i class="icon-heart"></i> by {props.name} Cybulski <a className="anchor" href="https://www.facebook.com/kamil.cybulski.9"><i class="icon-facebook-rect"></i></a></p>
       </div>
     </>
   );

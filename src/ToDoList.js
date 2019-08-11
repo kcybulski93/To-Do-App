@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ToDoApp.css';
+import './ToDoList.css';
 import Header from './components/Header';
 import AddTask from './components/AddTask';
 import ToDoTasksList from './components/ToDoTasksList';
@@ -7,7 +7,7 @@ import ComplTasksList from './components/ComplTasksList';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
 
-class ToDoApp extends Component {
+class ToDoList extends Component {
   counter = 2
   state = {
     developerName: '',
@@ -115,4 +115,4 @@ class ToDoApp extends Component {
   }
 }
 
-export default ToDoApp;
+export default ToDoList;

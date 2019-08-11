@@ -12,7 +12,7 @@ const Header = (props) => {
           <h5>(For {props.name} {props.surname})</h5>
         </div >
         <div className="rightHeader">
-          <button>Back</button>
+          <button><i className="ccw" class="icon-ccw"></i></button>
         </div>
         <div style={{ clear: "both" }} > </div>
       </div>

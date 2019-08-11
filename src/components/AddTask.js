@@ -58,8 +58,8 @@ class AddTask extends Component {
             <div style={{ clear: "both" }} > </div>
           </div>
           <div className="AddTaskRight">
-            <button className="add" onClick={this.handleAddClick}>Add</button>
-            <button className="clear" onClick={this.handleClearClick}> Clear</button>
+            <button className="add" onClick={this.handleAddClick}><i class="icon-plus"></i></button>
+            <button className="clear" onClick={this.handleClearClick}>Clear</button>
             <div style={{ clear: "both" }} > </div>
             <input className="checkbox" type="checkbox" id="important" checked={this.state.checked} onChange={this.handleCheckbox} />
             <label className="checkbox-label" htmlFor="important">PRIORITY</label>

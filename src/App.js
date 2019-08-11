@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ToDoApp from './ToDoApp';
+import ToDoList from './ToDoList';
 import Login from './Login';
 
 class App extends Component {
@@ -21,7 +21,7 @@ class App extends Component {
     render() {
         const { login, name, surname } = this.state;
         return (
-            login ? <Login add={this.addUser} /> : <ToDoApp name={name} surname={surname} />
+            login ? <Login add={this.addUser} /> : <ToDoList name={name} surname={surname} />
         );
     }
 }

@@ -1,6 +1,6 @@
-.ToDoTasksList{
+.ToDoTasksList {
   text-align: center;
-  min-height: 415px;
+  min-height: 42px;
   background-color: #EAEBEF;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -14,7 +14,29 @@
   box-shadow: 0px -2px 3px 1px rgba(204,204,204,1);
 }
 
-h4 {
-  padding: 0px;
+.lST {
+  color:rgb(52, 86, 133);
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.lastDoneTask {
+  width: 680px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  height: 62px;
+  background: #EAEBEF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(204,204,204,1);
+  box-shadow: 0px 0px 3px 1px rgba(204,204,204,1);
+}
+
+.nothing {
+  text-align: left;
+  font-size: 20px;
+  padding: 15px 20px;
   margin: 0px;
 }
