@@ -51,14 +51,21 @@ class AddTask extends Component {
     return (
       <>
         <div className="AddTask">
-          <input className="text" type="text" placeholder="Add new task..." value={this.state.text} onChange={this.handleText} />
-          <button className="add" onClick={this.handleAddClick}>Add</button>
-          <button className="clear" onClick={this.handleClearClick}>Clear</button>
-          <br />
-          <input className="date" type="date" value={this.state.date} min={this.minDate} max={maxDate} onChange={this.handleDate} />
-          <label className="date-label" htmlFor="date">Deadline</label>
-          <input className="checkbox" type="checkbox" id="important" checked={this.state.checked} onChange={this.handleCheckbox} />
-          <label htmlFor="important">Priorytet</label><br />
+          <div className="AddTaskLeft">
+            <input className="content" type="text" placeholder="Add new task..." value={this.state.text} onChange={this.handleText} />
+            <label className="date-label" htmlFor="date">DEADLINE:</label>
+            <input className="date" type="date" value={this.state.date} min={this.minDate} max={maxDate} onChange={this.handleDate} />
+            <div style={{ clear: "both" }} > </div>
+          </div>
+          <div className="AddTaskRight">
+            <button className="add" onClick={this.handleAddClick}>Add</button>
+            <button className="clear" onClick={this.handleClearClick}> Clear</button>
+            <div style={{ clear: "both" }} > </div>
+            <input className="checkbox" type="checkbox" id="important" checked={this.state.checked} onChange={this.handleCheckbox} />
+            <label className="checkbox-label" htmlFor="important">PRIORITY</label>
+            <div style={{ clear: "both" }} > </div>
+          </div>
+          <div style={{ clear: "both" }} > </div>
         </div>
       </>
     );

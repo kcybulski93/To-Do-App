@@ -8,7 +8,55 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-    -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,1);
-    -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,1);
-    box-shadow: 3px 3px 30px 5px rgba(204,204,204,1);
+  -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,1);
+  -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,1);
+  box-shadow: 3px 3px 30px 5px rgba(204,204,204,1);
+}
+
+.Nav {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.ToDoTasksButton {
+  color:rgb(52, 86, 133);
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  display:inline-block;
+  -webkit-box-shadow: -1px -3px 3px 0px rgba(204,204,204,1);
+  -moz-box-shadow: -1px -3px 3px 0px rgba(204,204,204,1);
+  box-shadow: -1px -3px 3px 0px rgba(204,204,204,1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ToDoTasksButton:hover {
+  background-color: #f9f9f9;
+}
+
+.ToDoTasksButton:focus {
+  background-color: #EAEBEF;
+}
+
+.CompletedTasksButton{
+  color:rgb(52, 86, 133);
+  text-decoration: none;
+  margin-left: 20px;
+  background-color: white;
+  padding: 10px;
+  display:inline-block;
+  -webkit-box-shadow: -2px -3px 3px 0px rgba(204,204,204,1);
+  -moz-box-shadow: -2px -3px 3px 0px rgba(204,204,204,1);
+  box-shadow: -2px -3px 3px 0px rgba(204,204,204,1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.CompletedTasksButton:hover {
+  background-color: #f9f9f9;
+}
+
+.CompletedTasksButton:focus {
+  background-color: #EAEBEF;
 }

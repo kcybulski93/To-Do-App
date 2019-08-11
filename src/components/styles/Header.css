@@ -1,8 +1,8 @@
 .Header {
-  display: inline-block;
+  float: left;
   width: 680px;
   background-color: #EAEBEF;
-  height: 66px;
+  height: 70px;
   margin: 20px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 3px 1px rgba(204,204,204,1);
@@ -10,24 +10,59 @@
   box-shadow: 0px 0px 3px 1px rgba(204,204,204,1);
   
 }
+
 .centerHeader{
   float: left;
   width: 300px;
-  height: 66px;
 }
+
 .centerHeader h1 {
-  color: #304F79;
+  color: rgb(52, 86, 133);
+  font-size: 32px;
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .centerHeader h5 {
-  color: #304F79;
+  color: rgb(52, 86, 133);
+  font-size: 18px;
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
+.rightHeader {
+float: left;
+text-align: right;
+width: 190px;
+height: 70px;
+}
 
+.rightHeader button {
+  width: 60px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #276297;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+}
 
+.rightHeader button:hover {
+  background-color: #1b588b;
+    transition: all 0.1s ease-in-out;
+}
+
+.rightHeader button:focus {
+  background-color: #1b588b;
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(143, 136, 136);
+  -moz-box-shadow: 0px 0px 10px 2px rgb(143, 136, 136);
+  box-shadow: 0px 0px 10px 2px rgb(143, 136, 136);
+}

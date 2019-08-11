@@ -1,7 +1,6 @@
-.AddTask
-{
+.AddTask {
   text-align: left;
-  background-color:#EAEBEF;
+  background-color:#E0E3E7;
   width: 680px;
   margin-left: 20px;
   margin-right: 20px;
@@ -10,40 +9,176 @@
   -webkit-box-shadow: 0px 0px 3px 1px rgba(204,204,204,1);
   -moz-box-shadow: 0px 0px 3px 1px rgba(204,204,204,1);
   box-shadow: 0px 0px 3px 1px rgba(204,204,204,1);
+
 }
 
-.text {
-  width: 480px;
-  height: 30px;
-  margin-left: 20px;
-  margin-top: 15px;
+.AddTaskLeft {
+  float: left;
+  width: 510px;
+  border-radius: 10px;
+  background-color:#EAEBEF;
 }
 
-.add {
-  height: 30px;
-  width: 70px;
+.content {
   margin-left: 15px;
+  margin-top: 15px;
+  width: 480px;
+  background-color: #f9f9f9;
+  color: #666666;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.clear {
-  height: 30px;
-  width: 70px;
-  margin-left: 5px;
+.content:hover {
+  border: 2px solid #3d78ad;
+  transition: all 0.1s ease-in-out;
+}
+.content:focus {
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+  box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+  border: 2px solid #3d78ad;
+  background-color: rgb(239, 240, 245);
+  color:rgb(52, 86, 133);
 }
 
 .date {
+  float: left;
   text-align: center;
-  width: 180px;
-  height: 30px;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  width: 180px;
+  background-color: #f9f9f9;
+  color: #666666;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 3px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.date:hover {
+  border: 2px solid #3d78ad;
+  transition: all 0.1s ease-in-out;
+}
+
+.date:focus {
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+  box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+  border: 2px solid #3d78ad;
+  background-color: rgb(239, 240, 245);
+  color:rgb(52, 86, 133);
 }
 
 .date-label {
+  float: left;
+  font-size: 18px;
   margin-left: 20px;
+  color:rgb(52, 86, 133);
+  margin-top: 9px;
+  letter-spacing: 1px;
+}
+
+.AddTaskRight {
+  float: left;
+  width: 170px;
+  height: 106.13px;
+  background-color:#E0E3E7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.add {
+  float: left;
+  width: 70px;
+  height: 42px;
+  margin-top: 17px;
+  margin-left: 10px;
+  background-color: #276297;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+.add:hover {
+  background-color: #1b588b;
+    transition: all 0.1s ease-in-out;
+}
+
+.add:active {
+  background-color: #1b588b;
+  -webkit-box-shadow:inset 0px 0px 6px 2px rgb(143, 136, 136);
+  -moz-box-shadow:inset 0px 0px 6px 2px rgb(143, 136, 136);
+  box-shadow:inset 0px 0px 6px 2px rgb(143, 136, 136);
+}
+
+.clear {
+  float: left;
+  width: 70px;
+  height: 42px;
+  margin-top: 17px;
+  margin-left: 10px;
+  background-color: #276297;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.clear:hover {
+  background-color: #1b588b;
+    transition: all 0.1s ease-in-out;
+}
+
+.clear:active {
+  background-color: #1b588b;
+  -webkit-box-shadow:inset 0px 0px 6px 2px rgb(143, 136, 136);
+  -moz-box-shadow:inset 0px 0px 6px 2px rgb(143, 136, 136);
+  box-shadow:inset 0px 0px 6px 2px rgb(143, 136, 136);
+  outline: none;
 }
 
 .checkbox {
-  margin-left: 240px;
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-top: 15px;
+  margin-left: 40px;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.checkbox:hover {
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(204,204,204,1);
+    box-shadow: 0px 0px 10px 1px rgba(204,204,204,1);
+    transition: all 0.1s ease-in-out;
+}
+
+.checkbox-label {
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  color:rgb(52, 86, 133);
+  font-size: 16px;
 }

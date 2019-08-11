@@ -21,7 +21,6 @@ class ToDoApp extends Component {
     fetch("data.json")
       .then(response => response.json())
       .then(result => {
-        console.log(result)
         this.setState({
           developerName: result.name
         })
@@ -96,13 +95,14 @@ class ToDoApp extends Component {
               {<AddTask addTask={this.addTask} />}
             </section>
             <section>
-              <nav>
-                <NavLink to="/to-do" activeClassName="news_selected"><button>Halo</button></NavLink>
-                <NavLink to="/completed" activeClassName="news_selected">Done</NavLink>
+              <nav className="Nav">
+                <NavLink to="/to-do" activeClassName="news_selected" className="ToDoTasksButton">To-Do-Tasks</NavLink>
+                <NavLink to="/completed" activeClassName="news_selected" className="CompletedTasksButton">Completed-Tasks</NavLink>
               </nav>
               <Switch>
                 <Route path="/to-do" component={() => <ToDoTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} changeTaskStatus={this.changeTaskStatus} back={this.restoreTask} />} />
                 <Route path="/completed" component={() => <ComplTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} back={this.restoreTask} />} />
+                <Route component={() => <ToDoTasksList tasks={this.state.tasks} deleteTask={this.deleteTask} changeTaskStatus={this.changeTaskStatus} back={this.restoreTask} />} />
               </Switch>
             </section>
           </main>

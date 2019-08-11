@@ -12,11 +12,14 @@ const Task = (props) => {
   if (active) {
     return (
       <div className='toDoTask'>
-        <div className='content'><h4 style={priority ? style : null}>{text}</h4></div>
-        <div className='deadline'>  - do <span> {date} </span> </div>
-        <button onClick={() => props.change(id)}>Completed</button>
-        <button>Edit</button>
-        <button onClick={() => props.delete(id)}>Delete</button>
+        <div className='content'>
+          <h4 style={priority ? style : null}>{text}</h4>
+        </div>
+        <div className='deadline'>
+          <h4> {date} </h4>
+        </div>
+        <button onClick={() => props.change(id)}>C</button>
+        <button onClick={() => props.delete(id)}>D</button>
       </div>
     );
   } else {
