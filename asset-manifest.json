@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/To-Do-App/static/css/main.9d66ab2c.chunk.css",
+    "main.js": "/To-Do-App/static/js/main.e3f15a46.chunk.js",
+    "main.js.map": "/To-Do-App/static/js/main.e3f15a46.chunk.js.map",
+    "runtime~main.js": "/To-Do-App/static/js/runtime~main.08825c03.js",
+    "runtime~main.js.map": "/To-Do-App/static/js/runtime~main.08825c03.js.map",
+    "static/js/2.99b024ad.chunk.js": "/To-Do-App/static/js/2.99b024ad.chunk.js",
+    "static/js/2.99b024ad.chunk.js.map": "/To-Do-App/static/js/2.99b024ad.chunk.js.map",
+    "index.html": "/To-Do-App/index.html",
+    "precache-manifest.ca196f7eb1c619cafb70581e1eb2945f.js": "/To-Do-App/precache-manifest.ca196f7eb1c619cafb70581e1eb2945f.js",
+    "service-worker.js": "/To-Do-App/service-worker.js",
+    "static/css/main.9d66ab2c.chunk.css.map": "/To-Do-App/static/css/main.9d66ab2c.chunk.css.map",
+    "static/media/index.css": "/To-Do-App/static/media/symphony.fcb1692c.png"
+  }
+}
